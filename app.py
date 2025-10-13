@@ -10,7 +10,7 @@ import os
 # This block will show an error when you run locally, which is normal.
 # It's designed to work when deployed on Streamlit Cloud.
 try:
-    HF_API_TOKEN = st.secrets["HF_API_TOKEN"]
+    HF_API_TOKEN = st.secrets["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"]
     headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
 except (KeyError, FileNotFoundError):
     st.error("API Key not found in Streamlit Secrets. This app will only work when deployed.")
